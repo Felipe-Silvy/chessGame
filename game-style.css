@@ -201,6 +201,7 @@ h2 {
     width: 10vh;
   }
 }
+
 @media (max-width: 650px) {
   .chess-board {
     transform: scale(0.95); /* diminui um pouco */
