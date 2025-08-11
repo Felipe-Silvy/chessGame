@@ -1,0 +1,76 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #ffc107;
+  margin-bottom: 2rem;
+}
+
+.image-banner img {
+  width: 80%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ffd862;
+  margin-bottom: 2rem;
+}
+
+.settings h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffc107;
+}
+
+.timers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.timers label {
+  background-color: #1a1a1a;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.timers input[type="radio"] {
+  margin-right: 6px;
+}
+
+.timers input[type="radio"]:checked + span,
+.timers input[type=\"radio\"]:checked ~ label {
+  border-color: #ffc107;
+}
+
+#jogar {
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}

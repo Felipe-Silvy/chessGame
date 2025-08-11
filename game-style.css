@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #ffc107;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #ffc107;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 80vmin;
+  margin: auto;
+  aspect-ratio: 1;
+}
+.square {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #30596f;
+}
+.white {
+  background-color: #a1abb6;
+}
+
+.timer {
+  font-size: 2rem;
+}
+
+#selecionado {
+  background-color: #9dbf7c;
+}
+
+#timer1,
+#capturadas1 {
+  background-color: rgb(224, 219, 219);
+  border-radius: 1vh;
+}
+
+#capturadas1,
+#capturadas2 {
+  margin-top: 2vh;
+  padding: 1vh;
+}
+
+#timer2,
+#capturadas2 {
+  background-color: rgb(43, 43, 43);
+  color: rgb(251, 251, 251);
+  border-radius: 1vh;
+}
+
+.branco {
+  color: rgb(255, 255, 255);
+}
+
+/* COMBINACAO DEFAULT (AZUL) */
+.azulE {
+  background-color: #30596f;
+}
+.azulC {
+  background-color: #a1abb6;
+}
+
+/* COMBINACAO 2 (MARROM) */
+.marromE {
+  background-color: rgb(181, 136, 99);
+}
+.marromC {
+  background-color: rgb(228, 206, 169);
+}
+
+/* COMBINACAO 3 (VERDE) */
+.verdeE {
+  background-color: rgb(60, 91, 60);
+}
+.verdeC {
+  background-color: rgb(173, 201, 160);
+}
+
+/* COMBINACAO 3 (CINZA) */
+.cinzaE {
+  background-color: rgb(80, 80, 80);
+}
+.cinzaC {
+  background-color: rgb(180, 180, 180);
+}
+
+.capturavel {
+  background-color: #e78080;
+}
+
+#corTabuleiro {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Mudei a opacidade para 0.3. Isso deixa o fundo mais claro. */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#mensagem-fim-de-jogo,
+#modal-promocao {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+#buttonContainer button {
+  font-size: 5vh;
+  width: 15vh;
+}
+
+#fechar {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px 30px; /* Diminui o padding interno */
+  }
+
+  #mensagem-fim-de-jogo,
+  #modal-promocao p {
+    font-size: 1.2em; /* Diminui o tamanho da fonte do texto */
+    margin-bottom: 15px;
+  }
+
+  #buttonContainer {
+    gap: 2vh; /* Diminui o espaçamento entre os botões */
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha */
+  }
+
+  #buttonContainer button {
+    font-size: 3.5vh; /* Diminui o tamanho da fonte dos botões */
+    width: 12vh; /* Diminui a largura dos botões */
+  }
+
+  #fechar {
+    width: 70%; /* Aumenta a largura do botão "Fechar" para ocupar mais espaço */
+  }
+}
+
+/* --- Outra media query para telas ainda menores, como celulares em modo retrato --- */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 15px 20px;
+  }
+
+  #mensagem-fim-de-jogo,
+  #modal-promocao p {
+    font-size: 1em;
+  }
+
+  #buttonContainer button {
+    font-size: 3vh;
+    width: 10vh;
+  }
+}
