@@ -201,3 +201,20 @@ h2 {
     width: 10vh;
   }
 }
+@media (max-width: 650px) {
+  .chess-board {
+    transform: scale(0.95); /* diminui um pouco */
+    margin: auto;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .square {
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 3vh;
+  }
+}
