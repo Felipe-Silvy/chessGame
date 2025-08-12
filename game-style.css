@@ -29,13 +29,13 @@ h2 {
   justify-content: center;
   font-size: 5vh;
   cursor: pointer;
-}
+} 
 
 .black {
-  background-color: #30596f;
+  background-color: rgb(181, 136, 99);
 }
 .white {
-  background-color: #a1abb6;
+  background-color: rgb(228, 206, 169);
 }
 
 .timer {
@@ -69,20 +69,20 @@ h2 {
   color: rgb(255, 255, 255);
 }
 
-/* COMBINACAO DEFAULT (AZUL) */
-.azulE {
-  background-color: #30596f;
-}
-.azulC {
-  background-color: #a1abb6;
-}
-
-/* COMBINACAO 2 (MARROM) */
+/* COMBINACAO DEFAULT (MARROM) */
 .marromE {
   background-color: rgb(181, 136, 99);
 }
 .marromC {
   background-color: rgb(228, 206, 169);
+}
+
+/* COMBINACAO 2 (AZUL) */
+.azulE {
+  background-color: #30596f;
+}
+.azulC {
+  background-color: #a1abb6;
 }
 
 /* COMBINACAO 3 (VERDE) */
@@ -219,3 +219,4 @@ h2 {
     font-size: 3vh;
   }
 }
+
