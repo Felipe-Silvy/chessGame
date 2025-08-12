@@ -977,6 +977,7 @@ function cronometro() {
 
     if (tempos[turnoAtual] === 0) {
       clearInterval(intervaloCronometro);
+      turnoOposto = turnoAtual === "branco" ? "preto" : "branco";
       acabaPartida(turnoOposto, "tempo");
     }
   }, 1000);
@@ -1080,3 +1081,4 @@ function copiaTabuleiro(tabuleiroOrig) {
     })
   );
 }
+
